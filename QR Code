@@ -1,0 +1,8 @@
+import qrcode
+from IPython.display import display
+
+data = "TicketID:12345, From:A, To:B, Time:10:30"
+
+qr = qrcode.make(data)
+
+display(qr)   # 👈 Shows QR inside notebook
